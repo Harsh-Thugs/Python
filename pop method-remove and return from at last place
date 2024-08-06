@@ -1,0 +1,4 @@
+#pop method-remove and return from at last place
+list=[1,4,6]
+list.pop()
+print(list)
