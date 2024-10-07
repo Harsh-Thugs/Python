@@ -44,3 +44,21 @@ child1 = child("xyz",12)
 parent1.greet()
 child1.greet()
 child1.display_age()   
+
+------------------------------------------------------------------------------------------------------------------
+
+#Method Overriding
+class animal():
+  def _init_(self,name):
+    self.name = name
+  def speak(self):
+    print(f"{self.name} makes a sound.")
+class dog(animal):
+  def _init_(self,name):
+    super()._init_(name)
+  def speak(self):
+    print(f"{self.name} barks.")
+a = animal("Genetic Animal")
+a.speak()
+d = dog("Buddy")
+d.speak()
