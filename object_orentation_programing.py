@@ -21,3 +21,26 @@ person1 = person("Kamlesh",25)
 print("Name: ", person1.name)
 print("age: ", person1.age)         
 print(person1.greet())
+
+------------------------------------------------------------------------------------------------------------------
+
+#single inheritance
+class Parent:
+  #Parent Class Definition
+  def __init__(self,name):
+    self.name = name
+  def greet(self):
+     print(f"Hello, my name is {self.name}")
+class child(Parent):
+  #class Class Definition
+  def __init__(self,name,age):
+     #Calling Constructor of the Parent Class
+     super().__init__(name)
+     self.age = age
+  def display_age(self):
+    print(f"{self.name}")
+parent1= Parent("ABC")
+child1 = child("xyz",12)
+parent1.greet()
+child1.greet()
+child1.display_age()   
